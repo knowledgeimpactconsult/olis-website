@@ -1,0 +1,25 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* your custom CSS goes below */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+/* custom styles go AFTER Tailwind directives */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}

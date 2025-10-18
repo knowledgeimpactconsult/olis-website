@@ -1,0 +1,102 @@
+# # Logs
+# logs
+# *.log
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# pnpm-debug.log*
+# lerna-debug.log*
+
+# node_modules
+# dist
+# dist-ssr
+# *.local
+
+# # Editor directories and files
+# .vscode/*
+# !.vscode/extensions.json
+# .idea
+# .DS_Store
+# *.suo
+# *.ntvs*
+# *.njsproj
+# *.sln
+# *.sw?
+
+# --------------------------------------------------
+# 🧱 CORE PROJECT FILES
+# --------------------------------------------------
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Local environment
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Local server / database / backend files (if any)
+.tmp/
+.cache/
+coverage/
+uploads/
+storage/
+
+# --------------------------------------------------
+# 🧰 LOGS AND DEBUG FILES
+# --------------------------------------------------
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --------------------------------------------------
+# 💻 EDITOR & OS FILES
+# --------------------------------------------------
+
+# VSCode and JetBrains
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Mac / Windows System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --------------------------------------------------
+# ⚙️ BUILD TOOLS AND CONFIGS
+# --------------------------------------------------
+
+*.local
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak
+
+# --------------------------------------------------
+# 🔒 SECURITY REMINDERS
+# --------------------------------------------------
+
+# Don’t ever push your private keys or credentials
+*.pem
+*.key
+*.crt
+*.p12
+*.cert
+
+# Ignore local scripts or automation configs
+scripts/local/
+secrets/

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "Graduation",
+    "title": "Graduation Ceremony",
+    "date": "2025-07-25",
+    "category": "Academics",
+    "description": "Celebrate the achievements of our graduating students with performances, awards, and speeches."
+  },
+  {
+    "id": "Sports",
+    "title": "Inter-House Sports Competition",
+    "date": "2025-10-23",
+    "category": "Sports",
+    "description": "Exciting sports activities including football, volleyball, and athletics among classes."
+  },
+  {
+    "id": "Culture",
+    "title": "Cultural Day Celebration",
+    "date": "2025-10-20",
+    "category": "Culture",
+    "description": "A day to showcase diverse cultural dances, traditional foods, and fashion displays."
+  },
+  {
+    "id": 4,
+    "title": "Christmas Carol Service",
+    "date": "2025-12-15",
+    "category": "Culture",
+    "description": "An evening of beautiful carols, drama, and festive joy to mark the Christmas season."
+  },
+  {
+    "id": "Academics",
+    "title": "Science & Robotics Exhibition",
+    "date": "2025-09-30",
+    "category": "Academics",
+    "description": "Students present innovative projects in coding, robotics, and STEM exploration."
+  }
+]

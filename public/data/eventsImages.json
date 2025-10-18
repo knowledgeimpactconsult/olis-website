@@ -1,0 +1,32 @@
+[
+  {
+    "src": "/images/events1.jpg",
+    "alt": "Graduation Day",
+    "caption": "Graduation Day"
+  },
+  {
+    "src": "/images/events2.jpg",
+    "alt": "School Play",
+    "caption": "School Play"
+  },
+  {
+    "src": "/images/events3.jpg",
+    "alt": "Cultural Festival",
+    "caption": "Cultural Festival"
+  },
+  {
+    "src": "/images/events4.jpg",
+    "alt": "Sports Meet",
+    "caption": "Sports Meet"
+  },
+  {
+    "src": "/images/events5.jpg",
+    "alt": "Science Fair",
+    "caption": "Science Fair"
+  },
+  {
+    "src": "/images/events6.jpg",
+    "alt": "Art Exhibition",
+    "caption": "Art Exhibition"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  { "src": "/images/junior1.jpg", "alt": "Lab Work", "caption": "Lab Work" },
+  {
+    "src": "/images/junior2.jpg",
+    "alt": "Class Presentation",
+    "caption": "Class Presentation"
+  },
+  {
+    "src": "/images/junior3.jpg",
+    "alt": "Sports Activity",
+    "caption": "Sports Activity"
+  },
+  {
+    "src": "/images/junior4.jpg",
+    "alt": "Music & Drama",
+    "caption": "Music & Drama"
+  },
+  { "src": "/images/junior5.jpg", "alt": "Art Class", "caption": "Art Class" },
+  {
+    "src": "/images/junior6.jpg",
+    "alt": "Community Service",
+    "caption": "Community Service"
+  }
+]

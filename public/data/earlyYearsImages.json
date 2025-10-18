@@ -1,0 +1,28 @@
+[
+  {
+    "src": "/images/early1.jpg",
+    "alt": "Creative Play",
+    "caption": "Creative Play"
+  },
+  {
+    "src": "/images/early2.jpg",
+    "alt": "Reading Time",
+    "caption": "Reading Time"
+  },
+  {
+    "src": "/images/early3.jpg",
+    "alt": "Art & Craft",
+    "caption": "Art & Craft"
+  },
+  {
+    "src": "/images/early4.jpg",
+    "alt": "Outdoor Fun",
+    "caption": "Outdoor Fun"
+  },
+  { "src": "/images/early5.jpg", "alt": "Music Time", "caption": "Music Time" },
+  {
+    "src": "/images/early6.jpg",
+    "alt": "Storytelling",
+    "caption": "Storytelling"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "src": "/images/primary1.jpg",
+    "alt": "Science Experiment",
+    "caption": "Science Experiment"
+  },
+  {
+    "src": "/images/primary2.jpg",
+    "alt": "Reading Corner",
+    "caption": "Reading Corner"
+  },
+  { "src": "/images/primary3.jpg", "alt": "Math Fun", "caption": "Math Fun" },
+  {
+    "src": "/images/primary4.jpg",
+    "alt": "Sports Day",
+    "caption": "Sports Day"
+  },
+  {
+    "src": "/images/primary5.jpg",
+    "alt": "Art Workshop",
+    "caption": "Art Workshop"
+  },
+  {
+    "src": "/images/primary6.jpg",
+    "alt": "Music Performance",
+    "caption": "Music Performance"
+  }
+]
