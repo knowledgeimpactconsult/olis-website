@@ -9,14 +9,22 @@ import { ChevronDown } from "lucide-react";
 /* ===== IMAGE DATA ===== */
 const earlyYearsImages = [
   { src: "/images/early1.jpg", alt: "Creative Play", caption: "Creative Play" },
-  { src: "/images/early2.jpg", alt: "Reading Time", caption: "Reading Time" },
+  {
+    src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815637/collaboration_gj1yuf.jpg",
+    alt: "students collaboration",
+    caption: "Collaboration Time",
+  },
   { src: "/images/early3.jpg", alt: "Art & Craft", caption: "Art & Craft" },
-  { src: "/images/early4.jpg", alt: "Outdoor Fun", caption: "Outdoor Fun" },
+  {
+    src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815637/sports-club_eauere.jpg",
+    alt: "Outdoor Fun",
+    caption: "Outdoor Fun",
+  },
 ];
 
 const primaryImages = [
   {
-    src: "/images/primary1.jpg",
+    src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815648/math_k8dtfh.jpg",
     alt: "Class Participation",
     caption: "Class Participation",
   },
@@ -34,11 +42,19 @@ const primaryImages = [
 ];
 
 const juniorHighImages = [
-  { src: "/images/jhs1.jpg", alt: "STEM Workshop", caption: "STEM Workshop" },
-  { src: "/images/jhs2.jpg", alt: "Coding Lesson", caption: "Coding Lesson" },
-  { src: "/images/jhs3.jpg", alt: "Science Fair", caption: "Science Fair" },
   {
-    src: "/images/jhs4.jpg",
+    src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815649/stem_ozav4u.jpg",
+    alt: "STEM Workshop",
+    caption: "STEM Workshop",
+  },
+  { src: "/images/jhs2.jpg", alt: "Coding Lesson", caption: "Coding Lesson" },
+  {
+    src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815648/science_r3iclr.jpg",
+    alt: "Science Fair",
+    caption: "Science Fair",
+  },
+  {
+    src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815651/group_hmnb9p.jpg",
     alt: "Team Collaboration",
     caption: "Team Collaboration",
   },
@@ -77,7 +93,8 @@ export default function Academics() {
       {/* ===== HERO SECTION ===== */}
       <div className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden">
         <img
-          src="/images/academics-hero.jpg"
+          // src="/images/academics/academics-hero.jpg"
+          src="https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815642/academics-hero_i799u1.jpg"
           alt="Academics Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />

@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import CoreValues from "../components/CoreValues";
 import Academics from "../components/academics/AcademicsContainer";
 import StudentLifePreview from "../components/StudentLifePreview";
-import ClubsPreview from "../components/clubsPreview";
+import ClubsPreview from "../components/ClubsPreview"; // ✅ Corrected
 import Achievements from "../components/achievements";
 import Navbar from "../components/Navbar";
 import AnnouncementsBanner from "../components/AnnouncementsBanner";

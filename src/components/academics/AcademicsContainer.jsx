@@ -2,10 +2,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import academicsImage from "../../assets/aca.png"; // 📌 Adjust path if needed
 
 function AcademicsContainer() {
   const [selectedImage, setSelectedImage] = useState(null);
+
+  const academicsImage =
+    "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815050/aca_qvkxqo.png";
 
   const handleScrollTo = (id) => {
     const section = document.querySelector(`#${id}`);

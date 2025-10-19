@@ -7,37 +7,37 @@ import { X } from "lucide-react";
 const houses = [
   {
     name: "Osagyefo House",
-    image: "/images/houses/osagyefo.png",
+    image: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815632/osagyefo_l2hywp.png",
     description:
       "Inspired by Osagyefo Dr. Kwame Nkrumah, this house embodies vision, determination, and the spirit of African unity.",
     color: "text-orange-600 border-orange-500",
   },
   {
     name: "Mandela House",
-    image: "/images/houses/mandela.png",
+    image: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815633/mandela_efep77.png",
     description:
       "Learners in Mandela House reflect on resilience, justice, and the power of forgiveness, inspired by Nelson Mandela.",
     color: "text-green-600 border-green-500",
   },
   {
     name: "Churchill House",
-    image: "/images/houses/churchill.png",
+    image: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815638/churchill_l5g0rs.png",
     description:
       "Churchill House represents courage, strategic thinking, and persistence in the face of challenges.",
     color: "text-red-600 border-red-500",
   },
   {
     name: "Gandhi House",
-    image: "/images/houses/gandhi.jpg",
+    image: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815631/gandhi_esrmnj.png",
     description:
       "Rooted in the values of non-violence and truth, Gandhi House encourages learners to lead with peace and conviction.",
     color: "text-yellow-600 border-yellow-500",
   },
   {
-    name: "Mother Theresa House",
-    image: "/images/houses/teresa.png",
+    name: "Mother Teresa House",
+    image: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815641/teresa_v5sfka.png",
     description:
-      "Inspired by Mother Theresa, this house highlights compassion, service, and humility as essential leadership qualities.",
+      "Inspired by Mother Teresa, this house highlights compassion, service, and humility as essential leadership qualities.",
     color: "text-blue-600 border-blue-500",
   },
 ];
@@ -59,7 +59,7 @@ export default function Houses() {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/houses/houses.jpg')" }}
+          style={{ backgroundImage: "url('https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815644/houses_muk1ze.jpg')" }}
         ></div>
         <div className="absolute inset-0 bg-black/60"></div>
 

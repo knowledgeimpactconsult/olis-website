@@ -7,7 +7,10 @@ export default function StudentLife() {
       {/* Hero Section */}
       <div
         className="relative w-full h-[65vh] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/images/studentlife-hero.jpg')" }}
+        style={{
+          backgroundImage:
+            "url('https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815647/studentlife-hero_zvulsq.jpg')",
+        }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
@@ -36,7 +39,7 @@ export default function StudentLife() {
           className="group relative overflow-hidden rounded-2xl shadow-lg"
         >
           <img
-            src="/images/houses/houses.jpg"
+            src="https://res.cloudinary.com/do9lqb7hd/image/upload/v1760834351/the-five-houses_e2vqlw.jpg"
             alt="Houses"
             className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
           />
@@ -51,7 +54,7 @@ export default function StudentLife() {
           className="group relative overflow-hidden rounded-2xl shadow-lg"
         >
           <img
-            src="/images/clubs/clubs.jpg"
+            src="https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815647/stem-hero_w9qvbk.jpg"
             alt="Clubs"
             className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
           />
@@ -66,7 +69,7 @@ export default function StudentLife() {
           className="group relative overflow-hidden rounded-2xl shadow-lg"
         >
           <img
-            src="/images/excursions/excursions.jpg"
+            src="https://res.cloudinary.com/do9lqb7hd/image/upload/v1760835038/Excursion-Adome-Bridge_tqwmht.jpg"
             alt="Excursions"
             className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
           />
@@ -81,7 +84,7 @@ export default function StudentLife() {
           className="group relative overflow-hidden rounded-2xl shadow-lg"
         >
           <img
-            src="/images/clubs/culture.jpg"
+            src="https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815645/culture_s9xcnb.jpg"
             alt="Sports & Culture"
             className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
           />

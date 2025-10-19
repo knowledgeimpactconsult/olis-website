@@ -6,37 +6,43 @@ import { motion } from "framer-motion";
 const clubs = [
   {
     name: "STEM Club",
-    image: "/images/clubs/stem.jpg",
+    image:
+      "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815640/clubs_wfvra7.jpg",
     description:
       "Hands-on exploration in robotics, coding, and science experiments that prepare learners for the future of technology.",
   },
   {
-    name: "Cadet",
-    image: "/images/clubs/cadet-club.jpg",
+    name: "Cadet Corps",
+    image:
+      "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760817398/cadet_bhp2ls.jpg",
     description:
       "Learners build discipline, teamwork, and leadership through drills and structured cadet training.",
   },
   {
     name: "Sports",
-    image: "/images/clubs/sports.jpg",
+    image:
+      "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815641/sports_jkqyfh.jpg",
     description:
       "From football to athletics, our sports teams promote fitness, teamwork, and competitive spirit.",
   },
   {
     name: "Taekwondo",
-    image: "/images/clubs/taekwondo.png",
+    image:
+      "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815632/taekwondo_hoivtg.png",
     description:
       "Learners practice self-defense, focus, and discipline through the martial art of Taekwondo.",
   },
   {
     name: "Writers & Debaters",
-    image: "/images/clubs/debate.jpg",
+    image:
+      "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760817518/debate_nolewy.jpg",
     description:
       "A platform to sharpen critical thinking, communication, and public speaking skills.",
   },
   {
     name: "Arts & Culture",
-    image: "/images/clubs/arts.jpg",
+    image:
+      "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815640/arts_pdgkfl.jpg",
     description:
       "Learners express creativity and heritage through music, dance, drama, and cultural performances.",
   },
@@ -52,7 +58,10 @@ export default function Clubs() {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/clubs/stem-hero.jpg')" }}
+          style={{
+            backgroundImage:
+              "url('https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815647/stem-hero_w9qvbk.jpg')",
+          }}
         ></div>
 
         {/* Overlay */}

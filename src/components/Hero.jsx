@@ -2,11 +2,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import heroImage from "../assets/herobg_premium.jpg";
+// import heroImage from "../assets/herobg.jpg";
 import AnnouncementsBanner from "./AnnouncementsBanner";
 import AnnouncementsCarousel from "./AnnouncementsCarousel";
 
 // Animation variants
+const heroImage =
+  "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815053/herobg_zj7tg6.jpg";
+
+
 const container = {
   hidden: { opacity: 0 },
   visible: (i = 1) => ({

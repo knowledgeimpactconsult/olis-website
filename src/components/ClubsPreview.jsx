@@ -7,17 +7,17 @@ import { ArrowUp, X } from "lucide-react";
 const clubs = [
   {
     name: "STEM Club",
-    img: "/images/stem.png",
+    img: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815642/stem_siaeuj.png",
     desc: "Innovating with science, technology, engineering, and mathematics to build future-ready leaders.",
   },
   {
     name: "Sports Club",
-    img: "/images/sports-club.png",
+    img: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815635/sports-club_jnvjng.png",
     desc: "Building teamwork, discipline, and resilience through athletics and physical fitness.",
   },
   {
     name: "Taekwondo Club",
-    img: "/images/taekwondo.png",
+    img: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815635/taekwondo_uaf1km.png",
     desc: "Instilling focus, respect, and self-control through martial arts training.",
   },
 ];
