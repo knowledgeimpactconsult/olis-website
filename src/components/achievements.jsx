@@ -1,4 +1,3 @@
-// src/components/Achievements.jsx
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, X } from "lucide-react";
@@ -6,17 +5,23 @@ import { ChevronDown, X } from "lucide-react";
 export default function Achievements() {
   const [openModal, setOpenModal] = useState(false);
 
-  // ESC closes modal
+  // ✅ ESC closes modal for accessibility
   useEffect(() => {
     const handleEsc = (e) => e.key === "Escape" && setOpenModal(false);
     window.addEventListener("keydown", handleEsc);
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
-  // Scroll to Academics section
+  // ✅ Smooth scroll to next section with offset (for fixed navbar)
   const handleScroll = () => {
-    const next = document.querySelector("#academics");
-    if (next) next.scrollIntoView({ behavior: "smooth" });
+    const target = document.querySelector("#academics-container");
+    if (target) {
+      const yOffset = -80; // Adjust for fixed navbar height
+      const y = target.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    } else {
+      console.warn("⚠️ Target section #academics-container not found.");
+    }
   };
 
   return (
@@ -25,7 +30,7 @@ export default function Achievements() {
       className="relative py-20 bg-gradient-to-r from-white via-orange-50 to-white overflow-hidden"
     >
       <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
-        {/* Title */}
+        {/* ✅ Title */}
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +40,7 @@ export default function Achievements() {
           Celebrating Excellence at OLIS
         </motion.h2>
 
-        {/* Orange underline */}
+        {/* ✅ Orange underline */}
         <motion.div
           initial={{ width: 0, opacity: 0 }}
           whileInView={{ width: "100px", opacity: 1 }}
@@ -43,6 +48,7 @@ export default function Achievements() {
           className="h-1 bg-orange-500 mx-auto mb-6 rounded"
         />
 
+        {/* ✅ Intro Paragraph */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +66,7 @@ export default function Achievements() {
           across the West African sub-region.
         </motion.p>
 
-        {/* Spotlight Card */}
+        {/* ✅ Spotlight Card */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -86,7 +92,7 @@ export default function Achievements() {
         </motion.div>
       </div>
 
-      {/* Scroll Down Button */}
+      {/* ✅ Scroll Down Button */}
       <motion.div
         className="absolute bottom-6 left-1/2 transform -translate-x-1/2"
         initial={{ opacity: 0 }}
@@ -94,16 +100,17 @@ export default function Achievements() {
         transition={{ delay: 1 }}
       >
         <motion.button
+          aria-label="Scroll to Academics section"
           onClick={handleScroll}
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
-          className="cursor-pointer text-orange-600"
+          className="cursor-pointer text-orange-600 hover:text-orange-700 focus:outline-none"
         >
           <ChevronDown size={40} />
         </motion.button>
       </motion.div>
 
-      {/* Modal */}
+      {/* ✅ Modal */}
       <AnimatePresence>
         {openModal && (
           <motion.div
@@ -124,12 +131,12 @@ export default function Achievements() {
               {/* Close Button */}
               <button
                 onClick={() => setOpenModal(false)}
-                className="absolute top-4 right-4 text-gray-600 hover:text-gray-900"
+                className="absolute top-4 right-4 text-gray-600 hover:text-gray-900 focus:outline-none"
               >
                 <X size={28} />
               </button>
 
-              {/* Adjusted Image for Portrait */}
+              {/* Modal Image */}
               <div className="flex items-center justify-center bg-gray-100">
                 <img
                   src="/images/david.png"
@@ -138,6 +145,7 @@ export default function Achievements() {
                 />
               </div>
 
+              {/* Modal Content */}
               <div className="p-6 text-center">
                 <h3 className="text-2xl font-bold text-orange-600 mb-3">
                   David Nii Commey Ankrah
