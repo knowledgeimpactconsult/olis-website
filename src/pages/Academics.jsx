@@ -47,7 +47,11 @@ const juniorHighImages = [
     alt: "STEM Workshop",
     caption: "STEM Workshop",
   },
-  { src: "/images/jhs2.jpg", alt: "Coding Lesson", caption: "Coding Lesson" },
+  {
+    src: "/images/jhs2.jpg",
+    alt: "Computing Lesson",
+    caption: "Computing Lab",
+  },
   {
     src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815648/science_r3iclr.jpg",
     alt: "Science Fair",

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 
+const MotionLink = motion(Link);
+
 const previews = [
   { title: "Cadet", img: "/images/cadet.jpg" },
   { title: "Sports", img: "/images/sports.jpg" },
@@ -69,12 +71,16 @@ export default function StudentLifePreview() {
         </div>
 
         {/* CTA Button */}
-        <Link
-          to="/student-life"
-          className="inline-block px-8 py-3 bg-orange-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-orange-700 transition"
-        >
-          Explore More
-        </Link>
+        <div className="flex justify-center mt-10">
+          <MotionLink
+            to="/student-life"
+            className="px-6 py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-orange-600 transition"
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Explore More
+          </MotionLink>
+        </div>
       </div>
 
       {/* Fullscreen Image Modal */}

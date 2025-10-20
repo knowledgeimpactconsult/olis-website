@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUp, X } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const MotionLink = motion(Link);
 
 const clubs = [
   {
@@ -67,7 +70,6 @@ export default function ClubsPreview() {
           {/* Orange underline */}
           <span className="absolute left-1/2 -bottom-2 w-16 h-1 bg-orange-500 transform -translate-x-1/2 rounded-full"></span>
         </motion.h2>
-
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -79,7 +81,6 @@ export default function ClubsPreview() {
           creativity, leadership, and discipline, shaping students beyond the
           classroom.
         </motion.p>
-
         {/* Clubs Grid */}
         <motion.div
           variants={containerVariants}
@@ -111,20 +112,22 @@ export default function ClubsPreview() {
           ))}
         </motion.div>
 
-        {/* CTA Button */}
+        {/* /* CTA Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="mt-12"
+          className="flex justify-center mt-[10px]" // Center + top margin
         >
-          <button
-            onClick={() => navigate("/clubs")}
-            className="px-8 py-3 bg-orange-500 text-white font-medium rounded-lg shadow-md hover:bg-orange-600 transition"
+          <MotionLink
+            to="/clubs"
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-8 py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-orange-600 transition"
           >
             View All Clubs
-          </button>
+          </MotionLink>
         </motion.div>
       </div>
 

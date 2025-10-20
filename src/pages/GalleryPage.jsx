@@ -6,6 +6,9 @@ import HeroBanner from "@/components/common/HeroBanner";
 import ScrollToTopButton from "@/components/common/ScrollToTopButton";
 import Lightbox from "@/components/gallery/Lightbox";
 import { categories } from "@/data/galleryData";
+import { Link } from "react-router-dom";
+
+const MotionLink = motion(Link);
 
 export default function GalleryPage() {
   const [lightbox, setLightbox] = useState({
@@ -109,20 +112,23 @@ export default function GalleryPage() {
               ))}
             </div>
 
-            {/* See More Link */}
+            {/* See More Button (Dynamic + New Style) */}
             {category.seeMoreLink && (
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.7, delay: 0.3 }}
-                className="mt-8 text-center"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="flex justify-center mt-[10px]"
               >
-                <a
-                  href={category.seeMoreLink}
+                <MotionLink
+                  to={category.seeMoreLink}
+                  whileHover={{ scale: 1.07 }}
+                  whileTap={{ scale: 0.95 }}
                   className="inline-block px-8 py-2 text-white bg-gradient-to-r from-orange-500 to-orange-700 rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
                 >
                   See More
-                </a>
+                </MotionLink>
               </motion.div>
             )}
           </motion.section>

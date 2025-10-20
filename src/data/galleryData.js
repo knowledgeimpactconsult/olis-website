@@ -8,7 +8,7 @@ export const categories = [
       { src: "/images/academics/science.jpg", alt: "Science experiment" },
       { src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815648/math_k8dtfh.jpg", alt: "Math lesson" },
     ],
-    seeMoreLink: "/gallery/academics",
+    seeMoreLink: "/academics",
   },
   {
     id: "houses",
@@ -20,7 +20,7 @@ export const categories = [
       { src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815638/gandhistd_zihn5m.jpg", alt: "Gandhi House" },
       { src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815633/teresastd_c1lkyu.jpg", alt: "Mother Teresa House" },
     ],
-    seeMoreLink: "/gallery/houses",
+    seeMoreLink: "/houses",
   },
   {
     id: "clubs",
@@ -30,7 +30,7 @@ export const categories = [
       { src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815640/arts_pdgkfl.jpg", alt: "Art Club" },
       { src: "https://res.cloudinary.com/do9lqb7hd/image/upload/v1760815640/clubs_wfvra7.jpg", alt: "STEM Club" },
     ],
-    seeMoreLink: "/gallery/clubs",
+    seeMoreLink: "/clubs",
   },
   {
     id: "cadet",
@@ -40,17 +40,17 @@ export const categories = [
       { src: "/images/cadet2.jpg", alt: "Cadet marching" },
       { src: "/images/cadet2.jpg", alt: "Cadet marching" },
     ],
-    seeMoreLink: "/gallery/cadet",
+    seeMoreLink: "/clubs",
   },
   {
-    id: "sports",
+    id: "sports-culture",
     label: "Sports",
     images: [
       { src: "/images/sport1.jpg", alt: "Football match" },
       { src: "/images/sport2.jpg", alt: "Basketball match" },
       { src: "/images/sport2.jpg", alt: "Track and field event" },
     ],
-    seeMoreLink: "/gallery/sports",
+    seeMoreLink: "/sports-culture",
   },
   {
     id: "culture",
@@ -60,7 +60,7 @@ export const categories = [
       { src: "/images/culture2.jpg", alt: "Music recital" },
       { src: "/images/culture2.jpg", alt: "Music recital" },
     ],
-    seeMoreLink: "/gallery/culture",
+    seeMoreLink: "/sports-culture",
   },
   {
     id: "excursions",
@@ -70,6 +70,6 @@ export const categories = [
       { src: "/images/excursion2.jpg", alt: "Museum visit" },
       { src: "/images/excursion2.jpg", alt: "Museum visit" },
     ],
-    seeMoreLink: "/gallery/excursions",
+    seeMoreLink: "/excursions",
   },
 ];

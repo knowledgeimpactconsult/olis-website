@@ -2,6 +2,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const MotionLink = motion(Link);
 
 function AcademicsContainer() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -127,6 +130,18 @@ function AcademicsContainer() {
           </motion.div>
         )}
       </AnimatePresence>
+      {/* CTA Button */}
+
+      <div className="flex justify-center mt-10">
+        <MotionLink
+          to="/academics"
+          className="px-6 py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-orange-600 transition"
+          whileHover={{ scale: 1.07 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Explore Academics
+        </MotionLink>
+      </div>
     </section>
   );
 }

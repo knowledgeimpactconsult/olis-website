@@ -9,6 +9,10 @@ import {
   Award,
 } from "lucide-react";
 import CoreValues from "../components/CoreValues"; // adjust path
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+const MotionLink = motion(Link);
 
 function About() {
   return (
@@ -117,12 +121,23 @@ function About() {
           Join OLIS today and give your child the opportunity to grow into a
           confident leader of tomorrow.
         </p>
-        <a
-          href="/admission"
-          className="bg-white text-orange-600 font-semibold px-8 py-4 rounded-lg shadow hover:bg-gray-100 transition inline-block"
+        {/* /* CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="flex justify-center mt-[10px]"
         >
-          Start Admission
-        </a>
+          <MotionLink
+            to="/admission"
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-8 py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-orange-600 transition"
+          >
+            Start Admission
+          </MotionLink>
+        </motion.div>
       </section>
     </div>
   );
